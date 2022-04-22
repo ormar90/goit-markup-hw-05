@@ -48,7 +48,7 @@
     <section class="hero section">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+        <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
@@ -114,15 +114,25 @@
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="work-list list">
           <li class="list-item">
-            <img src="./images/box-one.jpg" alt="человек пишет разметку сайта" width="370" />
+            <div class="work-list-wrap">
+              <img src="./images/box-one.jpg" alt="человек пишет разметку сайта" width="370" />
+              <p class="work-pharagraph">Десктопные приложения</p>
+            </div>
           </li>
 
           <li class="list-item">
-            <img src="./images/box-two.jpg" alt="человек адаптирует сайт под мобильные устройства" width="370" />
+            <div class="work-list-wrap">
+              <img src="./images/box-two.jpg" alt="человек адаптирует сайт под мобильные устройства" width="370" />
+              <p class="work-pharagraph">Мобильные приложения</p>
+            </div>
           </li>
 
           <li class="list-item">
-            <img src="./images/box-three.jpg" alt="человек создает дизайн сайта" width="370" />
+            <div class="work-list-wrap"><img src="./images/box-three.jpg" alt="человек создает дизайн сайта"
+                width="370" />
+              <p class="work-pharagraph">Дизайнерские решения</p>
+            </div>
+
           </li>
         </ul>
       </div>
@@ -384,6 +394,17 @@
       </div>
     </footer>
   </main>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-icon" data-modal-close>
+        <svg class="icon-close" height="11px" width="11px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
