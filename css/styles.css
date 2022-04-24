@@ -408,7 +408,7 @@ img {
   background-color: var(--basic-white-color);
   color: var(--icon-color);
 
-  transition-property: background-color, color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -510,11 +510,15 @@ img {
 
 .footer-addres {
   color: var(--basic-white-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail,
 .footer-tel {
   color: var(--secondary-white-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail:hover,
@@ -684,7 +688,8 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover .project-overlay {
+.project-link:hover .project-overlay,
+.project-link:focus .project-overlay {
   transform: translateY(0);
 }
 
@@ -745,15 +750,15 @@ img {
   border: 2px solid rgba(0, 0, 0, 0.1);
   color: var(--accent-color);
 
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-close {
-    transition-property: fill, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon:hover,
